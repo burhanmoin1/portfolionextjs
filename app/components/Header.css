@@ -1,0 +1,276 @@
+.main-header {
+  display: flex;
+  color: black;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0px;
+  padding: 1.2%;
+  margin-bottom: -1%;
+  font-weight: 800;
+}
+
+#root {
+  font-family: Inter;
+}
+
+.HeaderLogoText {
+  font-size: 44px;
+  letter-spacing: -4px;
+  position: relative;
+  cursor: pointer;
+  right: 400px;
+  font-weight: 800;
+}
+
+.HeaderLogoText::after {
+  content: attr(title);
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  }
+
+.HeaderLogoText:hover::after {
+  color: black;
+  opacity: 1;
+  }
+
+.menu-button {
+  background: none !important;
+  background-color: transparent !important; 
+  border: none;
+  outline: none !important;
+  z-index: 1000;
+  }
+
+.menu-icon {
+  width: 34px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  left: 300px;
+  z-index: 1000;
+  }
+
+.menu-icon span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #000;
+  border-radius: 9px;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  z-index: 1000;
+}
+
+
+.menu-icon span:nth-child(1) {
+  top: 0;
+  width: 40%;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 8px;
+  width: 95%;
+}
+
+.menu-icon span:nth-child(3) {
+  top: 16px;
+  width: 50%;
+  left: 48%;
+  transform-origin: left;
+}
+
+.menu-icon span:nth-child(4) {
+  top: 16px;
+}
+
+.menu-button.open .menu-icon span:nth-child(1) {
+  top: 8px;
+  width: 100%;
+  background: #fff;
+  transform: rotate(50deg);
+}
+
+.menu-button.open .menu-icon span:nth-child(2) {
+  opacity: 0;
+  background: #fff;
+}
+
+.menu-button.open .menu-icon span:nth-child(3) {
+  top: 15px;
+  width: 100%;
+  left: 0%;
+  background: #fff;
+  transform: rotate(-50deg) translateY(150%);
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 800;
+}
+
+@keyframes scroll-watcher {
+  to {scale: 1 1;}
+}
+
+.menu-items {
+  text-align: center;
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.menu-items > div {
+  margin-top: 60px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  letter-spacing: -3px;
+  position: relative;
+}
+
+.menu-items > div:hover {
+  color: rgb(168, 168, 177);
+}
+
+.menu-items > div::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+  left: 46px;
+  width: 0;
+  height: 6px;
+  border-radius: 2px; 
+  background-color: white;
+  transition: width 0.2s ease; 
+}
+
+.menu-items > div:hover::after {
+  width: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .arrow-button{
+
+    color: white;
+    
+  }
+
+  .HeaderLogoText:hover::after {
+    color: white;
+    }
+
+  .menu-icon span {
+    
+    background: #fff;
+    
+  }
+
+  .menu-button.open .menu-icon span:nth-child(1) {
+   
+    background: #000;
+    
+  }
+  
+  .menu-button.open .menu-icon span:nth-child(2) {
+    
+    background: #000;
+  }
+  
+  .menu-button.open .menu-icon span:nth-child(3) {
+
+    background: #000;
+    
+  }
+
+  .menu-overlay {
+  
+    background-color: white;
+    
+  }
+
+  .menu-items {
+  
+    color: black;
+   
+  }
+
+  .menu-items > div::after {
+    background-color: black;
+    
+  }
+
+  .main-header {
+    color: white;
+  }
+
+}
+
+  @media (max-width: 767.98px) {
+
+    .HeaderLogoText {
+        margin-right: 80px;
+        font-size: 34px;
+        left: -2px;
+        right: 0px;
+    }
+
+    .main-header {
+    
+      padding: 3.8%;
+      
+    }
+
+    .menu-icon {
+        left: 10px;
+    }
+
+    .menu-button.open {
+        border: none !important;
+      }
+
+    .menu-items {
+        font-size: 1.8rem;
+      }
+
+      .menu-items > div {
+        letter-spacing: -2.4px;
+      }
+
+      .menu-items > div::after {
+        left: 14px;
+        height: 5px; 
+      }
+
+  
+
+      .menu-items > div::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 48px;
+        width: 0;
+        height: 4px;
+        border-radius: 2px; 
+        background-color: white;
+        transition: width 0.5s ease; 
+      }
+      
+      .menu-items > div:hover::after {
+        width: 40%;
+      }
+      
+}

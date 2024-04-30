@@ -1,0 +1,116 @@
+.first-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1%;
+    letter-spacing: -2px;
+}
+
+.first-heading {
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1%;
+    text-align: start;
+    opacity: 0;
+    animation: 0.8s hey ease-out forwards;
+    animation-delay: 0.2s;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='58' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>👋</text></svg>") 16 0,auto;
+}
+
+.first-paragraph{
+    font-weight: 500;
+    font-size: 2.8rem;
+    text-align: end;
+    padding: 0.12%;
+    width: 40%;
+    opacity: 0;
+    transform: translateX(20%) !important;
+    animation: 0.4s para-animate ease-in forwards;
+    animation-delay: 0.8s;
+}
+
+.arrow-button{
+    margin: 4%;
+    font-size: 4rem;
+    color: black;
+    border: none;
+    opacity: 0;
+    animation: 0.4s arrow-waiter ease-in forwards 0.9s;
+  }
+  
+  .arrow-button:hover {
+    cursor: pointer;
+  }
+@keyframes para-animate {
+    from {margin-top: -10px; opacity: 0;}
+    to {margin-top: 0px; opacity: 1;}
+}
+
+@keyframes arrow-waiter {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes hey {
+    from {
+      opacity: 0;
+        transform: translateX(-44%);
+      }
+  
+      to {
+        opacity: 1;
+        transform: translateX(-40%);
+      }
+    }
+
+@keyframes hey-mobile {
+        from {
+            opacity: 0;
+            transform: translateX(-20%);
+          }
+      
+          to {
+            opacity: 1;
+            transform: translateX(-9%);
+          }
+        } 
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+
+    .first-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        padding-top: 10px;
+        letter-spacing: -2px;
+    }
+
+    .arrow-button{
+        margin: 20px;
+        margin-top: 8%;
+        margin-left: 32px;
+      }
+
+    .first-paragraph{
+        font-weight: 500;
+        font-size: 2em;
+        text-align: end;
+        padding-left: 10%;
+        width: 90%;
+        transform: translateX(0%) !important;
+        animation: 0.4s para-animate ease-in forwards;
+        animation-delay: 0.8s;
+    }
+    
+    .first-heading {
+        font-size: 4em;
+        font-weight: 700;
+        margin-top: 20px;
+        text-align: start;
+        animation: 0.8s hey-mobile ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+}
