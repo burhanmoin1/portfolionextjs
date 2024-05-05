@@ -7,26 +7,35 @@
   height: 10vh;
   right: 0;
   top: 0;
-  transform: translateY(-10%) translateX(760%) rotate(-20deg);
+  transform: translateY(160%) translateX(-12%) rotate(-20deg);
   cursor: pointer;
 }
 
 .burhanpic {
   position: absolute;
-  height: 20vh;
+  height: 30vh;
   right: 0;
   top: 0;
-  transform: translateY(40%) translateX(590%);
+  transform: translateY(80%) translateX(-30%);
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 20px;
+  transition: 0.3s scale ease;
 }
 
+.burhanpic:hover {
+  scale: 1.1;
+}
 
-.linkedinicon {
+.absolutegithub:hover, .mailicon:hover {
+  scale: 1.02;
+}
+
+.mailicon {
   position: fixed;
   height: 7vh;
   left: 0;
   bottom: 0;
+  transition: 0.3s scale ease;
   transform: translateY(-540%) translateX(74%);
   cursor: pointer;
 }
@@ -35,6 +44,7 @@
   position: fixed;
   height: 8vh;
   left: 0;
+  transition: 0.3s scale ease;
   bottom: 0;
   transform: translateX(60%) translateY(-333%);
   cursor: pointer;
@@ -50,7 +60,7 @@
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
 
-  .linkedinicon {
+  .mailicon {
     position: absolute;
     height: 5vh;
     left: 0;
@@ -75,4 +85,25 @@
     bottom: 0;
     transform: rotate(95deg) translateY(16%) translateX(-120%);
   }
+
+  .meline {
+    position: absolute;
+    height: 7vh;
+    right: 0;
+    top: 0;
+    transform: translateY(160%) translateX(-10%) rotate(-10deg);
+    cursor: pointer;
+    z-index: -2;
+  }
+  
+  .burhanpic {
+    position: absolute;
+    height: 18vh;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    transform: translateY(90%) translateX(-40%);
+    cursor: pointer;
+  }
+  
 }

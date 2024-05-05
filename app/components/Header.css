@@ -123,10 +123,10 @@
 }
 
 .menu-items > .menu-item {
-  margin: 70px;
+  margin: 60px;
   transform: translateY(100%);
   cursor: pointer;
-  letter-spacing: -1px;
+  letter-spacing: -3px;
   position: relative;
   width: 100%;
 }
