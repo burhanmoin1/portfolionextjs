@@ -1,5 +1,6 @@
 #root {
   font-family: Inter;
+  scroll-behavior: smooth;
 }
 
 .meline {
@@ -8,7 +9,6 @@
   right: 0;
   top: 0;
   transform: translateY(160%) translateX(-12%) rotate(-20deg);
-  cursor: pointer;
 }
 
 .burhanpic {

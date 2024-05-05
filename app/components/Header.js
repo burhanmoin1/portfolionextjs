@@ -6,6 +6,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const scrollToSection = () => {
+      const section = document.getElementById('blackcontainer');
+      if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+      }
+  };
+
     useEffect(() => {
         const handleScroll = () => {
           if (menuOpen && window.scrollY > 0.01) {
@@ -22,34 +29,6 @@ const Header = () => {
         };
       }, [menuOpen]);
 
-      const handleWhatIDoButtonClick = () => {
-        let scrollAmount = 900;
-        if (window.innerWidth <= 767.98) {
-          scrollAmount = 680;
-        }
-        
-        const currentScroll = window.scrollY;
-        const targetScroll = currentScroll + scrollAmount;
-        const scrollDuration = 500;
-        
-        const startTime = performance.now();
-        
-        const animateScroll = (currentTime) => {
-          const elapsed = currentTime - startTime;
-          const progress = Math.min(elapsed / scrollDuration, 1);
-          
-          const easing = 1 - Math.pow(1 - progress, 3); // Ease-out cubic
-          const scrollPosition = currentScroll + (scrollAmount * easing);
-          
-          window.scrollTo(0, scrollPosition);
-          
-          if (progress < 1) {
-            requestAnimationFrame(animateScroll);
-          }
-        };
-      
-        requestAnimationFrame(animateScroll);
-      };
 
     const navContainer = {
         visible: {
@@ -93,7 +72,7 @@ const Header = () => {
                     <div className="menu-items">
                         <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}} >Home</motion.div>
                         <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}}>Blogs</motion.div>
-                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}onClick={handleWhatIDoButtonClick}>What I Do</motion.div>
+                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}} onClick={scrollToSection}>What I Do</motion.div>
                         <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>Portfolio</motion.div>
 
                         <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.44}}>Contact</motion.div>
