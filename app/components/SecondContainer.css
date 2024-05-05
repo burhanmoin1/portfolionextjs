@@ -1,0 +1,85 @@
+.second-container {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    z-index: 400;
+    margin-left: 140px;
+}
+
+.black-container-for-second{
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 34px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-paragraph {
+    color: white;
+    font-size: 3.4rem;
+    text-align: center;
+    width: 82%;
+    letter-spacing: -2.4px;
+    line-height: 60px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+
+    .second-container {
+        margin: 0px;
+    }
+
+    .black-container-for-second{
+        background-color: black;
+        margin: 0px;
+        border-radius: 12px;
+    }
+    
+    .second-paragraph {
+        color: white;
+        font-size: 1.69rem;
+        text-align: center;
+        width: 88%;
+        line-height: 32px;
+        letter-spacing: -1.8px;
+    }
+
+    .third-paragraph {
+      color: black;
+      font-size: 2.6rem;
+      text-align: center;
+      width: 100%;
+      letter-spacing: -2.8px;
+      line-height: 0px;
+    }  
+
+  .white-container-for-second{
+      height: 60vh;
+      margin-top: 10px;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 40px;
+    margin-top: 10px;
+  }
+
+  .stack {
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .react-img {
+    margin: 20px;
+  }
+}

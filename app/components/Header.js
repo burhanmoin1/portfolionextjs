@@ -71,10 +71,10 @@ const Header = () => {
 
     return ( 
         <motion.div className="main-header">
-            <motion.h1 initial={{ opacity: 0}} animate={{ opacity:1}} transition={{duration: 0.6, type: "tween", delay: 1.8}}
+            <motion.h1 initial={{ opacity: 0}} animate={{ opacity:1}} transition={{duration: 0.6, type: "tween", delay: 1.4}}
                 className='HeaderLogoText' title=' Codecraft' >B.M. 
             </motion.h1>
-            <motion.button initial={{ opacity:0}} animate={{opacity: 1}} transition={{duration: 0.6, type: "tween", delay: 1.8}} className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+            <motion.button initial={{ opacity:0}} animate={{opacity: 1}} transition={{duration: 0.6, type: "tween", delay: 1.4}} className={`menu-button ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
                 <motion.div className="menu-icon">
                     <span></span>
                     <span></span>
@@ -91,12 +91,12 @@ const Header = () => {
                     variants={navContainer}
                 >
                     <div className="menu-items">
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}} >Home</motion.div>
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}}>Blogs</motion.div>
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}onClick={handleWhatIDoButtonClick}>What I Do</motion.div>
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>Portfolio</motion.div>
+                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}} >Home</motion.div>
+                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}}>Blogs</motion.div>
+                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}}onClick={handleWhatIDoButtonClick}>What I Do</motion.div>
+                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>Portfolio</motion.div>
 
-                        <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.44}}>Contact</motion.div>
+                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.44}}>Contact</motion.div>
                     </div>
                 </motion.div>
             )}

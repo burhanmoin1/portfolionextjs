@@ -3,14 +3,13 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    padding: 1%;
     letter-spacing: -2px;
+    margin-bottom: 20px;
 }
 
 .first-heading {
     font-size: 7rem;
     font-weight: 700;
-    margin-top: 1%;
     text-align: start;
     opacity: 0;
     animation: 0.8s hey ease-out forwards;
@@ -20,31 +19,31 @@
 
 .first-paragraph{
     font-weight: 500;
-    font-size: 2.8rem;
+    font-size: 2rem;
     text-align: end;
-    padding: 0.12%;
     width: 40%;
+    margin-left: 140px;
     opacity: 0;
-    transform: translateX(20%) !important;
     animation: 0.4s para-animate ease-in forwards;
     animation-delay: 0.8s;
 }
 
 .arrow-button{
-    margin: 4%;
     font-size: 4rem;
     color: black;
     border: none;
     opacity: 0;
+    background-color: transparent;
     animation: 0.4s arrow-waiter ease-in forwards 0.9s;
   }
   
   .arrow-button:hover {
     cursor: pointer;
   }
+
 @keyframes para-animate {
-    from {margin-top: -10px; opacity: 0;}
-    to {margin-top: 0px; opacity: 1;}
+    from {margin-top: -50px; opacity: 0;}
+    to {margin-top: -60px; opacity: 1;}
 }
 
 @keyframes arrow-waiter {
@@ -100,7 +99,7 @@
         text-align: end;
         padding-left: 10%;
         width: 90%;
-        transform: translateX(0%) !important;
+        margin-left: 0px;
         animation: 0.4s para-animate ease-in forwards;
         animation-delay: 0.8s;
     }
@@ -110,6 +109,7 @@
         font-weight: 700;
         margin-top: 20px;
         text-align: start;
+        margin-left: -10px;
         animation: 0.8s hey-mobile ease-in-out forwards;
         animation-delay: 0.2s;
     }

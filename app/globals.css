@@ -1,33 +1,78 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+#root {
+  font-family: Inter;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.meline {
+  position: absolute;
+  height: 10vh;
+  right: 0;
+  top: 0;
+  transform: translateY(-10%) translateX(760%) rotate(-20deg);
+  cursor: pointer;
+}
+
+.burhanpic {
+  position: absolute;
+  height: 20vh;
+  right: 0;
+  top: 0;
+  transform: translateY(40%) translateX(590%);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+.linkedinicon {
+  position: fixed;
+  height: 7vh;
+  left: 0;
+  bottom: 0;
+  transform: translateY(-540%) translateX(74%);
+  cursor: pointer;
+}
+
+.absolutegithub {
+  position: fixed;
+  height: 8vh;
+  left: 0;
+  bottom: 0;
+  transform: translateX(60%) translateY(-333%);
+  cursor: pointer;
+}
+
+.absoluteline {
+  position: fixed;
+  height: 14vh;
+  left: 0;
+  bottom: 0;
+  transform: rotate(95deg) translateY(16%) translateX(-80%);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+
+  .linkedinicon {
+    position: absolute;
+    height: 5vh;
+    left: 0;
+    bottom: 0;
+    transform: translateY(-520%) translateX(52%);
+    cursor: pointer;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  .absolutegithub {
+    position: absolute;
+    height: 6vh;
+    left: 0;
+    bottom: 0;
+    transform: translateX(36%) translateY(-310%);
+    cursor: pointer;
+  }
+  
+  .absoluteline {
+    position: absolute;
+    height: 8vh;
+    left: 0;
+    bottom: 0;
+    transform: rotate(95deg) translateY(16%) translateX(-120%);
   }
 }
