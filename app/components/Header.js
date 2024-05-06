@@ -13,6 +13,14 @@ const Header = () => {
       }
   };
 
+  const scrollToPortfolioSection = () => {
+    const section = document.getElementById('portfolio');
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
+
     useEffect(() => {
         const handleScroll = () => {
           if (menuOpen && window.scrollY > 0.01) {
@@ -71,11 +79,9 @@ const Header = () => {
                 >
                     <div className="menu-items">
                         <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}} >Home</motion.div>
-                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}}>Blogs</motion.div>
-                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.26}} onClick={scrollToSection}>What I Do</motion.div>
-                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>Portfolio</motion.div>
-
-                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.44}}>Contact</motion.div>
+                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}} onClick={scrollToSection}>What I Do</motion.div>
+                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.24}} onClick={scrollToPortfolioSection}>Portfolio</motion.div>
+                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>About Me</motion.div>
                     </div>
                 </motion.div>
             )}
