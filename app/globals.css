@@ -88,7 +88,7 @@
   height: 14vh;
   left: 0;
   bottom: 0;
-  transform: rotate(95deg) translateY(16%) translateX(-80%);
+  transform: rotate(93deg) translateY(16%) translateX(-80%);
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {

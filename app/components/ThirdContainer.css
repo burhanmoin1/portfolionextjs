@@ -10,19 +10,20 @@
 
 .thirdheading{
     font-size: 3rem;
+    padding-left: 140px;
 }
 
 .chooseme {
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    padding-left: 100px;
+    gap: 20px;
+    padding-left: 200px;
     cursor: pointer;
 }
 
 .square {
     display: flex;
-    width: 40vmin;
+    width: 49vmin;
     padding: 20px;
     border-radius: 20px;
     padding-bottom: 0px;
@@ -35,7 +36,7 @@
     text-align: start;
     font-size: 1.8rem;
     transition: transform 0.3s;
-    transform: translateY(750%);
+    transform: translateY(650%);
 }
 
 .numberid{
@@ -65,7 +66,7 @@
     .details {
         opacity: 1;
         visibility: visible;
-        font-size: 1rem;
+        font-size: 1.1rem;
         align-self: center;
         transition: opacity 0.4s 0.1s;
         text-align: start;
@@ -100,7 +101,7 @@
     
     .square {
         display: flex;
-        width: 60vmin;
+        width: 68vmin;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0px 2px 6px rgba(0, 0, 0, .4);
