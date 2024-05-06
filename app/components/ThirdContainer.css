@@ -27,7 +27,7 @@
     border-radius: 20px;
     padding-bottom: 0px;
     padding-top: 0px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, .4);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, .4);
     flex-direction: column;
 }
 
@@ -35,7 +35,7 @@
     text-align: start;
     font-size: 1.8rem;
     transition: transform 0.3s;
-    transform: translateY(850%);
+    transform: translateY(750%);
 }
 
 .numberid{
@@ -45,7 +45,7 @@
 .details {
     opacity: 0;
     visibility: hidden;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     align-self: center;
     transition: opacity 0.4s 0.1s;
     text-align: start;

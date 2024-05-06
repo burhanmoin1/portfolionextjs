@@ -8,8 +8,10 @@ import github from './github.png';
 import mail from './mail.png';
 import meline from './itis.png';
 import burhanpic from './Burhanpic.png';
+import resume from './resume-black.png';
 
 function FirstContainer () {
+  
 
   const handleWhatIDoButtonClick = () => {
     let scrollAmount = 900;
@@ -70,11 +72,13 @@ function FirstContainer () {
       >
         &#8595;
       </motion.button>
+      <a href="/burhansresume.pdf">
+      <motion.img initial={{opacity: 0}} animate={{opacity:1, transition: {duration: .5, delay: .4}}} src={resume.src} className="resumeicon" alt="Burhan Moin resume" /></a>
       <a href="mailto:m.burhanmoin1@gmail.com">
-        <motion.img initial={{opacity: 0}} animate={{opacity:1, transition: {duration: .5, delay: .4}}} src={mail.src} className="mailicon" alt="Email Icon" />
+        <motion.img initial={{opacity: 0}} animate={{opacity:1, transition: {duration: .5, delay: .4}}} src={mail.src} className="mailicon" alt="Burhan Moin email" />
       </a>
       <a href="https://github.com/burhanmoin1">
-      <motion.img initial={{opacity: 0}} animate={{opacity:1, transition: {duration: .5, delay: .4}}} src={github.src} className="absolutegithub"/></a>
+      <motion.img initial={{opacity: 0}} animate={{opacity:1, transition: {duration: .5, delay: .4}}} src={github.src} alt="burhanmoingithub" className="absolutegithub"/></a>
       <motion.img initial={{opacity: 0}} animate={{opacity:1, transition: {duration: .5, delay: .4}}} src={Arrow.src} alt="line" className="absoluteline"/>
     </div>
     

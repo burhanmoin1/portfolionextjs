@@ -26,7 +26,7 @@
   scale: 1.1;
 }
 
-.absolutegithub:hover, .mailicon:hover {
+.absolutegithub:hover, .mailicon:hover, .resumeicon:hover  {
   scale: 1.02;
 }
 
@@ -37,6 +37,39 @@
   bottom: 0;
   transition: 0.3s scale ease;
   transform: translateY(-540%) translateX(74%);
+  cursor: pointer;
+}
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width for vertical scrollbars, height for horizontal scrollbars */
+}
+
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background */
+  border-radius: 8px; /* Optional: round the edges */
+}
+
+/* Style the scrollbar handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #666; /* Gray color for the thumb */
+  border-radius: 10px; /* Optional: round the edges */
+}
+
+/* Add hover effect to the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.resumeicon {
+  position: fixed;
+  height: 7vh;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s scale ease;
+  transform: translateY(-684%) translateX(74%) rotate(-1deg);
   cursor: pointer;
 }
 
@@ -66,6 +99,16 @@
     left: 0;
     bottom: 0;
     transform: translateY(-520%) translateX(52%);
+    cursor: pointer;
+  }
+
+  .resumeicon {
+    position: absolute;
+    height: 5vh;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s scale ease;
+    transform: translateY(-650%) translateX(50%) rotate(-1deg);
     cursor: pointer;
   }
   

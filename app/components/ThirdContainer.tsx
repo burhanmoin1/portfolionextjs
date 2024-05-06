@@ -8,7 +8,7 @@ const ThirdContainer = () => {
         {
             id: 1,
             statement: 'Full-Stack Expertise',
-            details: "My proficiency in both front-end and back-end frameworks makes me a one-stop shop for complete web development. You don't need to hire separate developers for each layer of the stack, as you can handle everything from database to UI."
+            details: "My proficiency in both front-end and back-end frameworks makes me a one-stop shop for complete web development. You don't need to hire separate developers for each layer of the stack, I can handle everything from database to UI."
         },
         {
             id: 2,
