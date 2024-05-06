@@ -21,6 +21,8 @@
     cursor: pointer;
 }
 
+
+
 .square {
     display: flex;
     width: 49vmin;
@@ -31,6 +33,7 @@
     box-shadow: 0px 2px 6px rgba(0, 0, 0, .4);
     flex-direction: column;
 }
+
 
 .reason {
     text-align: start;
@@ -61,6 +64,63 @@
     visibility: visible;
   }
 
+  /* CSS */
+.services {
+    display: flex;
+    flex-direction: column; /* Aligns items vertically */
+    margin: 0px;
+    padding-left: 100px; 
+    width: 110vmin;
+}
+
+.servicerow {
+    display: flex;
+    flex-direction: column; /* Ensure each item aligns vertically */
+    align-items: start; /* Align content to the start of the column */
+    padding: 20px; /* Padding inside each row */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.servicerow:nth-child(4) {
+    border-bottom: none; /* Remove border */
+}
+
+.consultation-button{
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+   
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .consultation-button:hover {
+    background-color: black;
+    color: white;
+    border-color: 1px solid white;
+    transform: scale(1.05);
+  }
+
+.service {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.3rem;
+    margin-top: 10px; /* Provides spacing between title and description */
+}
+
+.Time {
+    font-size: 1.1rem;
+    margin-top: 10px; 
+    align-self: flex-end;
+}
+
+
   @media only screen and (min-width: 0px) and (max-width: 1024px) {
 
     .details {
@@ -74,21 +134,34 @@
 
     .thirdheading{
         font-size: 2rem;
+        padding-left: 0px;
     }
 
     .numberid{
         font-size: 1rem;
     }    
 
+    .services {
+        display: flex;
+        flex-direction: column; /* Aligns items vertically */
+        margin: 0px;
+        padding-left: 0px;
+        width: 100vmin;
+    }
+
     .thirdcontainer {
         padding-bottom: 10px;
         margin-top: -80px;
     }
 
+    .square:hover .reason {
+        transform: none;
+      }
+
     .reason {
         text-align: start;
         font-size: 1.2rem;
-        transform: translateY(0%);
+        transform: translateY(10%);
     }
 
     .chooseme {

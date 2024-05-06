@@ -4,6 +4,33 @@ import {motion} from 'framer-motion';
 
 const ThirdContainer = () => {
 
+    const services = [
+        {
+            id: 1,
+            Service: "Single Page Application",
+            Description: "I will design and develop a landing page that introduces users to your brand, creating a welcoming and engaging experience.",
+            Time: "from 3 to 5 days"
+        },
+        {
+            id: 2,
+            Service: "Multi-Page Website",
+            Description: "I will create a multi-page, upto 5 pages, website to showcase your business's services, portfolio, and contact information, offering users a comprehensive and easy-to-navigate experience.",
+            Time: "from 5 to 8 days"         
+        },
+        {
+            id: 3,
+            Service: "E-commerce Platform",
+            Description: "I will design and develop a full-featured e-commerce platform that includes product listings, shopping cart functionality, and a secure checkout process, providing your customers with a seamless online shopping experience.",
+            Time: "from 5 to 8 days"  
+        },
+        {
+            id: 4,
+            Service: "Full Custom Website",
+            Description: "I will design and build a fully customized website tailored to your specific requirements, offering unique design elements, custom functionalities, and a seamless user experience that reflects your brand identity.",
+            Time: "from 5 to 8 days"  
+        },
+    ]
+
     const chooseme = [
         {
             id: 1,
@@ -28,8 +55,8 @@ const ThirdContainer = () => {
             <div className='chooseme'>
             {chooseme.map((reason) => (
             <motion.div 
-            initial={{scale:0.9}}
-            whileInView={{scale: 1, transition: {delay: 0.2}}}
+            initial={{scale:0.8}}
+            whileInView={{scale: 1, transition: {delay: 0.1, type: 'tween'}}}
             key={reason.id}
             className='square'>
                 <p className='numberid'>{reason.id}</p>
@@ -37,6 +64,21 @@ const ThirdContainer = () => {
                 <p className='details'>{reason.details}</p>
             </motion.div>
              ))}
+             </div>
+             <h2 className='thirdheading'>Services</h2>
+             <div className='services'>
+                {services.map((service) => (
+                <motion.div 
+                    key={service.id}
+                    initial={{scale:0.9}}
+                    whileInView={{scale: 1, transition: {delay: 0.2}}}
+                    className='servicerow'>
+                    <h2 className='service'>{service.Service}</h2>
+                    <p className='description'>{service.Description}</p>
+                    <p className='Time'>{service.Time}</p>
+                </motion.div>
+                ))}
+                <a className="consultation-button" href="https://calendly.com/m-burhanmoin1/30min">Book Free Consultation</a>
              </div>
         </div>
     );

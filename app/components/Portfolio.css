@@ -1,0 +1,13 @@
+.Portfolio {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: -1px;
+}
+
+.PortfolioHeading{
+    font-size: 4.8rem;
+    letter-spacing: -2px;
+}

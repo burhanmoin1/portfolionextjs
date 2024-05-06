@@ -44,13 +44,13 @@ function FirstContainer () {
 
   return (
     <div className="first-container">
-      <motion.img initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: .5, delay: .4}}}  src={meline.src} className="meline"/>
+      <motion.img initial={{opacity: 0}} animate={{opacity:1, transition: {duration: .5, delay: .2}}}  src={meline.src} className="meline"/>
         <a 
           href="https://wa.me/923463637743?text=Hello!" 
           target="_blank" 
           rel="noopener noreferrer" 
         >
-        <motion.img initial={{opacity: 0}} animate={{opacity:.8, transition: {duration: .5, delay: .4}}}  src={burhanpic.src} className="burhanpic"/></a>
+        <motion.img initial={{opacity: 0}} animate={{opacity:1, transition: {duration: .5, delay: .4}}}  src={burhanpic.src} className="burhanpic"/></a>
       <h2 className="first-heading">
         
         <span className="hey">Hey,</span>
