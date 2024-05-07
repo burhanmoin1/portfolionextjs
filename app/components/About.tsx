@@ -24,7 +24,7 @@ const About = () => {
                  whileInView={{opacity: 1, transition: { delay:.4, type: 'tween'}}}
                  className='storytext'>
                 <h2 className='storyheading'>Past</h2>
-                <p className='storydetails'>Burhan, I'm a coding enthusiast who has always been interested in technology. Although I developed an interest in coding when I was really young, I didn't start coding until I was 18. Looking back, I realized that starting earlier might have given me a huge head start, but this initial delay has only fueled my desire to learn and make up for lost time.</p>
+                <p className='storydetails'>Burhan, I am a coding enthusiast who has always been interested in technology. Although I developed an interest in coding when I was really young, I did not start coding until I was 18. Looking back, I realized that starting earlier might have given me a huge head start, but this initial delay has only fueled my desire to learn and make up for lost time.</p>
                 </motion.div>
                 <motion.div
                  initial={{opacity: 0}}
