@@ -1,7 +1,7 @@
 'use client'
 import "./Portfolio.css";
-import deltagif from './deltapic.jpg';
-import wizardrygif from './wizardrygif.jpg';
+import deltagif from './deltacommunication3.gif';
+import wizardrygif from './wizardrybrews.gif';
 import westgatecapitalimg from './westgatecapitalimg.jpg';
 import chordengine from './chordengine.jpg';
 import {motion} from 'framer-motion';
