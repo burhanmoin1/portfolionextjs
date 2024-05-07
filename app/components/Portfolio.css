@@ -75,7 +75,8 @@
 
     .techused {
         padding-top: 0px;
-        font-size: 1.2rem;
+        font-size: .8rem;
+        width: 90vmin;
         color:darkblue;
     }
 
