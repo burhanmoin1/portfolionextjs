@@ -5,6 +5,7 @@
     flex-direction: column;
     margin: 20px;
     z-index: 400;
+    
     margin-left: 140px;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .second-paragraph {
-    color: white;
+    color: #e7e7e9;
     font-size: 2.4rem;
     text-align: center;
     width: 82%;
