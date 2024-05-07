@@ -13,6 +13,13 @@ const Header = () => {
       }
   };
 
+  const scrollToAboutSection = () => {
+    const section = document.getElementById('aboutme');
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
   const scrollToPortfolioSection = () => {
     const section = document.getElementById('portfolio');
     if (section) {
@@ -81,7 +88,7 @@ const Header = () => {
                         <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.1}} >Home</motion.div>
                         <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.18}} onClick={scrollToSection}>What I Do</motion.div>
                         <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.24}} onClick={scrollToPortfolioSection}>Portfolio</motion.div>
-                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}}>About Me</motion.div>
+                        <motion.div className='menu-item' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.32}} onClick={scrollToAboutSection}>About Me</motion.div>
                     </div>
                 </motion.div>
             )}

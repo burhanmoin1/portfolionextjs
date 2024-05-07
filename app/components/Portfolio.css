@@ -15,11 +15,11 @@
 }
 
 .projectimg {
-    height: 46vh;
+    height: 40vh;
     margin-bottom: 120px;
-    width: 88vmin;
+    width: 82vmin;
     border-radius: 12px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, .6);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, .2);
 }
 
 .projectname {
@@ -35,13 +35,13 @@
 
 .projecttext {
     margin-top: 10px;
-    letter-spacing: 0px;
 }
 
 .techused {
     padding-top: 40px;
     font-size: 1.2rem;
     color:darkblue;
+    width: 50vmin;
 }
 
 .projectdetails {
@@ -88,11 +88,10 @@
     }
 
     .projectimg {
-        height: 24vh;
+        height: 23vh;
         margin: 10px;
-        width: 92vmin;
+        width: 91vmin;
         border-radius: 8px;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, .6);
     }
 
 }

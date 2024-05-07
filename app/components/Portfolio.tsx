@@ -50,6 +50,8 @@ const Portfolio = () => {
             </motion.h1>
             {portfoliodetails.map((project) => (
             <motion.div 
+                 initial={{opacity: 0}}
+                 whileInView={{opacity: 1, transition: { type: 'tween'}}}
             key={project.id}
             className='projects'>
                 <a href={project.link}>
