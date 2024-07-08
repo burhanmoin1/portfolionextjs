@@ -96,3 +96,98 @@
     }
 
 }
+
+
+/* 150% */
+@media (min-width: 1242px) and (max-width: 1364px) {
+
+    .PortfolioHeading{
+        font-size: 4rem;
+        letter-spacing: -2px;
+        align-self: center;
+        padding-left: 80px;
+    }
+    
+    .projectimg {
+        height: 40vh;
+        margin-bottom: 120px;
+        width: 74vmin;
+        border-radius: 12px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, .2);
+    }
+    
+    .projectname {
+        font-size: 1.4rem;
+    }
+    
+    .projects {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        padding-left: 300px;
+    }
+    
+    .projecttext {
+        margin-top: 10px;
+    }
+    
+    .techused {
+        padding-top: 40px;
+        font-size: 1rem;
+        color:darkblue;
+        width: 50vmin;
+    }
+    
+    .projectdetails {
+        width: 56vmin;
+        font-size: 1rem;
+    }
+
+}
+
+/* 175% */
+@media (min-width: 800px) and (max-width: 1242px) {
+
+    .PortfolioHeading{
+        font-size: 4rem;
+        letter-spacing: -2px;
+        align-self: center;
+        padding-left: 80px;
+    }
+    
+    .projectimg {
+        height: 40vh;
+        margin-bottom: 120px;
+        width: 74vmin;
+        border-radius: 12px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, .2);
+    }
+    
+    .projectname {
+        font-size: 1.4rem;
+    }
+    
+    .projects {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        padding-left: 300px;
+    }
+    
+    .projecttext {
+        margin-top: 10px;
+    }
+    
+    .techused {
+        padding-top: 40px;
+        font-size: .8rem;
+        color:darkblue;
+        width: 50vmin;
+    }
+    
+    .projectdetails {
+        width: 56vmin;
+        font-size: .8rem;
+    }
+
+}

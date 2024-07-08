@@ -125,7 +125,7 @@
 
 .menu-items > .menu-item {
   margin: 10px;
-  margin-top: 100px;
+  margin-top: 80px;
   transform: translateY(40%);
   cursor: pointer;
   letter-spacing: -1.5px;
@@ -178,4 +178,155 @@
         margin-left: 0px;
         margin-bottom: 50px;
       }
+}
+
+@media (min-width: 800px) and (max-width: 1242px) {
+
+  .main-header {
+    display: flex;
+    color: black;
+    justify-content: center;
+    background-color: transparent;
+    font-weight: 800;
+    width: 100%;
+  }
+  
+  .HeaderLogoText {
+    font-size: 44px;
+    letter-spacing: -4px;
+    position: relative;
+    cursor: pointer;
+    right: 300px;
+    font-weight: 800;
+  }
+  
+  .HeaderLogoText::after {
+    content: attr(title);
+    position: relative;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    }
+  
+  .HeaderLogoText:hover::after {
+    color: black;
+    opacity: 1;
+    }
+  
+  .menu-button {
+    background: none !important;
+    background-color: transparent !important; 
+    border: none;
+    outline: none !important;
+    z-index: 1000;
+    }
+  
+  .menu-icon {
+    width: 34px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    left: 220px;
+    z-index: 1000;
+    }
+  
+  .menu-icon span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #000;
+    border-radius: 9px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .menu-icon span:nth-child(1) {
+    top: 0;
+    width: 40%;
+  }
+  
+  .menu-icon span:nth-child(2) {
+    top: 8px;
+    width: 95%;
+  }
+  
+  .menu-icon span:nth-child(3) {
+    top: 16px;
+    width: 50%;
+    left: 48%;
+    transform-origin: left;
+  }
+  
+  .menu-icon span:nth-child(4) {
+    top: 16px;
+  }
+  
+  .menu-button.open .menu-icon span:nth-child(1) {
+    top: 8px;
+    width: 100%;
+    background: #fff;
+    transform: rotate(50deg);
+  }
+  
+  .menu-button.open .menu-icon span:nth-child(2) {
+    opacity: 0;
+    background: #fff;
+  }
+  
+  .menu-button.open .menu-icon span:nth-child(3) {
+    top: 15px;
+    width: 100%;
+    left: 0%;
+    background: #fff;
+    transform: rotate(-50deg) translateY(150%);
+  }
+  
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 800;
+  }
+  
+  .menu-items {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    font-weight: 700;
+    display: block;
+  }
+  
+  .menu-items > .menu-item {
+    margin: 10px;
+    margin-top: 80px;
+    transform: translateY(40%);
+    cursor: pointer;
+    letter-spacing: -1.5px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .menu-items > .menu-item {
+    transition: text-decoration 3s;
+  }
+  .menu-items:hover > .menu-item {
+    color: rgb(168, 168, 177);
+  }
+  
+  .menu-items:hover > .menu-item:hover {
+    color: rgb(255, 255, 255);
+  }
+
+
 }

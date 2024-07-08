@@ -53,3 +53,43 @@
         letter-spacing: -1.8px;
     }
 }
+
+/* 150% */
+@media (min-width: 1242px) and (max-width: 1364px) {
+    
+    .second-paragraph {
+        color: #e7e7e9;
+        font-size: 2rem;
+        text-align: center;
+        width: 82%;
+        letter-spacing: -2.4px;
+        line-height: 50px;
+        font-weight: 500;
+    }
+
+}
+
+/* 175% */
+@media (min-width: 800px) and (max-width: 1242px) {
+
+    .second-container {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+        z-index: 400;
+        margin-left: 100px;
+    }
+
+    .second-paragraph {
+        color: #e7e7e9;
+        font-size: 1.7rem;
+        text-align: center;
+        width: 82%;
+        letter-spacing: -1.4px;
+        line-height: 40px;
+        font-weight: 500;
+    }
+
+}
