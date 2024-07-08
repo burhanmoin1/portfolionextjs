@@ -76,3 +76,15 @@
     }
 
 }
+
+/* 175% */
+@media (min-width: 800px) and (max-width: 1242px) {
+
+    .storydetails {
+        font-size: 1.3rem;
+        text-align: start;
+        width: 110vmin;
+    }
+    
+
+}
