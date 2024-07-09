@@ -11,6 +11,11 @@
   transform: translateY(160%) translateX(-12%) rotate(-20deg);
 }
 
+* {
+  outline: 1px solid #f00 !important;
+}
+
+
 .burhanpic {
   position: absolute;
   height: 30vh;
@@ -24,6 +29,34 @@
 
 .burhanpic:hover {
   scale: 1.1;
+}
+
+/* 200% to 250% */
+@media (min-width: 600px) and (max-width: 960px) {
+
+  .meline {
+    position: absolute;
+    height: 10vh;
+    right: 0;
+    top: 0;
+    transform: translateY(160%) translateX(-12%) rotate(-20deg);
+  }
+  
+  .burhanpic {
+    position: absolute;
+    height: 30vh;
+    right: 0;
+    top: 0;
+    transform: translateY(80%) translateX(-30%);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s scale ease;
+  }
+  
+  .burhanpic:hover {
+    scale: 1.1;
+  }
+
 }
 
 .absolutegithub:hover, .mailicon:hover, .resumeicon:hover  {
@@ -42,20 +75,14 @@
 
 /* Target the scrollbar */
 ::-webkit-scrollbar {
-  width: 12px; /* Width for vertical scrollbars, height for horizontal scrollbars */
+  width: 8px; /* Width for vertical scrollbars, height for horizontal scrollbars */
 }
 
-
-/* Style the scrollbar track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Light gray background */
-  border-radius: 8px; /* Optional: round the edges */
-}
 
 /* Style the scrollbar handle (the draggable part) */
 ::-webkit-scrollbar-thumb {
   background: #666; /* Gray color for the thumb */
-  border-radius: 10px; /* Optional: round the edges */
+  border-radius: 0px; /* Optional: round the edges */
 }
 
 /* Add hover effect to the scrollbar thumb */
@@ -91,7 +118,7 @@
   transform: rotate(93deg) translateY(16%) translateX(-80%);
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
+@media (max-width: 767.98px) {
 
   .mailicon {
     position: absolute;

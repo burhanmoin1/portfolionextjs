@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     margin-bottom: 20px;
 }
 
@@ -76,7 +76,7 @@
           }
         } 
 
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
+@media (max-width: 767.98px) {
 
     .first-container {
         display: flex;
@@ -192,11 +192,11 @@
 }
 
 
-/* 200% */
-@media (min-width: 500px) and (max-width: 788px) {
+/* 200% to 250% */
+@media (min-width: 600px) and (max-width: 960px) {
 
   .first-heading {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     text-align: start;
     opacity: 0;
@@ -207,7 +207,7 @@
 
   .first-paragraph{
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: end;
     width: 40%;
     margin-left: 140px;
@@ -217,7 +217,7 @@
 }
 
 .arrow-button{
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: black;
     border: none;
     opacity: 0;

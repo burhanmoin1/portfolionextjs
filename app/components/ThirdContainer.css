@@ -38,7 +38,7 @@
     font-size: 1.8rem;
     transition: transform 0.3s;
     transform: translateY(650%);
-    width: 100vmin;
+    width: 50vmin;
 }
 
 .numberid{
@@ -106,6 +106,7 @@
 .service {
     font-size: 1.5rem;
     font-weight: bold;
+    width: 50vmin;
 }
 
 .description {
@@ -120,7 +121,7 @@
 }
 
 
-  @media only screen and (min-width: 0px) and (max-width: 1024px) {
+@media (max-width: 767.98px) {
 
     .details {
         opacity: 1;
@@ -207,7 +208,7 @@
         font-size: 1.4rem;
         transition: transform 0.3s;
         transform: translateY(580%);
-        width: 100vmin;
+        width: 45vmin;
     }
     
     .numberid{
@@ -260,7 +261,7 @@
         font-size: 1.4rem;
         transition: transform 0.3s;
         transform: translateY(580%);
-        width: 100vmin;
+        width: 45vmin;
     }
 
     .details {

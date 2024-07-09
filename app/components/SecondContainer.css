@@ -31,7 +31,7 @@
     font-weight: 500;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
+@media (max-width: 767.98px) {
 
     .second-container {
         margin: 20px;
@@ -70,7 +70,7 @@
 }
 
 /* 175% */
-@media (min-width: 800px) and (max-width: 1242px) {
+@media (min-width: 961px) and (max-width: 1242px) {
 
     .second-container {
         display: flex;
@@ -93,3 +93,28 @@
     }
 
 }
+
+/* 200% to 250% */
+@media (min-width: 600px) and (max-width: 960px) {
+
+    .second-container {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+        z-index: 400;
+        margin-left: 100px;
+    }
+
+    .second-paragraph {
+        color: #e7e7e9;
+        font-size: 1.3rem;
+        text-align: center;
+        width: 82%;
+        letter-spacing: -1.4px;
+        line-height: 40px;
+        font-weight: 500;
+    }    
+
+} 
