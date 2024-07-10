@@ -193,8 +193,8 @@
 }
 
 
-/* 200% to 250% */
-@media (min-width: 600px) and (max-width: 960px) {
+/* 200% */
+@media (min-width: 769px) and (max-width: 960px) {
 
     .PortfolioHeading{
         font-size: 3rem;
@@ -239,3 +239,39 @@
     }
 
 } 
+
+
+/* 250% */
+@media (min-width: 650px) and (max-width: 769px) {
+
+    .PortfolioHeading{
+        font-size: 2rem;
+        letter-spacing: -2px;
+        align-self: center;
+        padding-left: 80px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-left: 200px;
+    }
+
+    .projectname {
+        font-size: 1rem;
+    }
+
+    .projectdetails {
+        width: 56vmin;
+        font-size: .7rem;
+    }
+
+    .techused {
+        padding-top: 10px;
+        font-size: .5rem;
+        color:darkblue;
+        width: 50vmin;
+    }
+
+}

@@ -192,8 +192,8 @@
 }
 
 
-/* 200% to 250% */
-@media (min-width: 600px) and (max-width: 960px) {
+/* 200% */
+@media (min-width: 769px) and (max-width: 960px) {
 
   .first-heading {
     font-size: 4rem;
@@ -207,7 +207,46 @@
 
   .first-paragraph{
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    text-align: end;
+    width: 40%;
+    margin-left: 140px;
+    opacity: 0;
+    animation: 0.4s para-animate ease-in forwards;
+    animation-delay: 0.8s;
+}
+
+.arrow-button{
+    font-size: 1.4rem;
+    color: black;
+    border: none;
+    opacity: 0;
+    background-color: transparent;
+    animation: 0.4s arrow-waiter ease-in forwards 0.9s;
+  }
+  
+  .arrow-button:hover {
+    cursor: pointer;
+  }
+
+}
+
+/* 250% */
+@media (min-width: 650px) and (max-width: 769px) {
+
+  .first-heading {
+    font-size: 3.4rem;
+    font-weight: 700;
+    text-align: start;
+    opacity: 0;
+    animation: 0.8s hey ease-out forwards;
+    animation-delay: 0.2s;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='58' viewport='0 0 100 100' style='fill:black;font-size:34px;'><text y='50%'>👋</text></svg>") 16 0,auto;
+  }
+
+  .first-paragraph{
+    font-weight: 500;
+    font-size: 1rem;
     text-align: end;
     width: 40%;
     margin-left: 140px;

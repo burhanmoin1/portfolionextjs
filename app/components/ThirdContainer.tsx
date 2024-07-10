@@ -65,21 +65,7 @@ const ThirdContainer = () => {
             </motion.div>
              ))}
              </div>
-             <h2 className='thirdheading'>Services</h2>
-             <div className='services'>
-                {services.map((service) => (
-                <motion.div 
-                    key={service.id}
-                    initial={{scale:0.9}}
-                    whileInView={{scale: 1, transition: {delay: 0.2}}}
-                    className='servicerow'>
-                    <h2 className='service'>{service.Service}</h2>
-                    <p className='description'>{service.Description}</p>
-                    <p className='Time'>{service.Time}</p>
-                </motion.div>
-                ))}
-                <a className="consultation-button" href="https://calendly.com/m-burhanmoin1/30min">Book Free Consultation</a>
-             </div>
+             
         </div>
     );
 };

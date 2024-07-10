@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: end;
     height: 20vh;
-    
     margin-right: 100px;
 }
 
@@ -43,6 +42,119 @@
         font-size: 1.2rem;
         margin-top: 20px;
         letter-spacing: -2px;
+        transform: translateY(-40%);
+    }
+
+}
+
+/* 125% */
+@media (min-width: 1482px) and (max-width: 1669px) {
+
+    .footerheading {
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        letter-spacing: -4px;
+    }
+    
+    .footerpara {
+        font-size: 1.8rem;
+        margin-top: 20px;
+        letter-spacing: -2px;
+        transform: translateY(-40%);
+    }
+
+}
+
+/* 150% */
+@media (min-width: 1242px) and (max-width: 1364px) {
+
+    .footerheading {
+        font-size: 2.5rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        letter-spacing: -4px;
+    }
+    
+    .footerpara {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        letter-spacing: -2px;
+        transform: translateY(-40%);
+    }
+
+}
+
+/* 175% */
+@media (min-width: 961px) and (max-width: 1242px) {
+
+    
+
+    .footerheading {
+        font-size: 2.2rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        letter-spacing: -2.2px;
+    }
+    
+    .footerpara {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        letter-spacing: -2px;
+        transform: translateY(-40%);
+    }
+
+}
+
+/* 200% */
+@media (min-width: 769px) and (max-width: 960px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        height: 20vh;
+        margin-right: 60px;
+    }   
+
+    .footerheading {
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        letter-spacing: -2.4px;
+    }
+    
+    .footerpara {
+        font-size: 1.2rem;
+        margin-top: 0px;
+        letter-spacing: -2px;
+        transform: translateY(-40%);
+    }
+
+}
+
+/* 250% */
+@media (min-width: 650px) and (max-width: 769px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        height: 20vh;
+        margin-right: 60px;
+    }    
+
+    .footerheading {
+        font-size: 1.4rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        letter-spacing: -1.4px;
+    }
+    
+    .footerpara {
+        font-size: .8rem;
+        margin-top: 0px;
+        letter-spacing: 0px;
         transform: translateY(-40%);
     }
 

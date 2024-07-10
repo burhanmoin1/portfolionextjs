@@ -94,8 +94,8 @@
 
 }
 
-/* 200% to 250% */
-@media (min-width: 600px) and (max-width: 960px) {
+/* 200% */
+@media (min-width: 769px) and (max-width: 960px) {
 
     .second-container {
         display: flex;
@@ -114,6 +114,32 @@
         width: 82%;
         letter-spacing: -1.4px;
         line-height: 40px;
+        font-weight: 500;
+    }    
+
+} 
+
+
+/* 250% */
+@media (min-width: 650px) and (max-width: 769px) {
+
+    .second-container {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
+        z-index: 400;
+        margin-left: 100px;
+    }
+
+    .second-paragraph {
+        color: #e7e7e9;
+        font-size: 1rem;
+        text-align: center;
+        width: 82%;
+        letter-spacing: -1.4px;
+        line-height: 30px;
         font-weight: 500;
     }    
 
