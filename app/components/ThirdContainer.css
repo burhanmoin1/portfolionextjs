@@ -238,10 +238,14 @@
 
 
 /* 175% */
-@media (min-width: 800px) and (max-width: 1242px) {
+@media (min-width: 961px) and (max-width: 1242px) {
 
     .thirdheading{
         font-size: 2rem;
+    }
+
+    .numberid{
+        font-size: 1.2rem;
     }
 
     .square {
@@ -261,7 +265,7 @@
         font-size: 1.4rem;
         transition: transform 0.3s;
         transform: translateY(580%);
-        width: 45vmin;
+        width: 44vmin;
     }
 
     .details {
@@ -272,7 +276,80 @@
         transition: opacity 0.4s 0.1s;
         text-align: start;
     }
+}
 
+/* 200% */
+@media (min-width: 769px) and (max-width: 960px) {
+
+    .thirdheading{
+        font-size: 1rem;
+    }
+
+    .square {
+        display: flex;
+        width: 40vmin;
+        padding: 20px;
+        border-radius: 20px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, .2);
+        flex-direction: column;
+    }
+    
+    
+    .reason {
+        text-align: start;
+        font-size: 1.2rem;
+        transition: transform 0.3s;
+        transform: translateY(580%);
+        width: 40vmin;
+    }
+
+    .details {
+        opacity: 0;
+        visibility: hidden;
+        font-size: .8rem;
+        align-self: center;
+        transition: opacity 0.4s 0.1s;
+        text-align: start;
+    }
+
+} 
+  
+
+@media (min-width: 600px) and (max-width: 769px) {
+
+    .thirdheading{
+        font-size: 1rem;
+    }
+
+    .square {
+        display: flex;
+        width: 34vmin;
+        padding: 20px;
+        border-radius: 20px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, .2);
+        flex-direction: column;
+    }
+    
+    
+    .reason {
+        text-align: start;
+        font-size: .8rem;
+        transition: transform 0.3s;
+        transform: translateY(580%);
+        width: 38vmin;
+    }
+
+    .details {
+        opacity: 0;
+        visibility: hidden;
+        font-size: .6rem;
+        align-self: center;
+        transition: opacity 0.4s 0.1s;
+        text-align: start;
+    }
 
 }
-  
