@@ -176,11 +176,11 @@
       }
 }
 
-/* 175% */
-@media (min-width: 961px) and (max-width: 1242px) {
-  
+/* 125% */
+@media (min-width: 1482px) and (max-width: 1669px) {
+
   .HeaderLogoText {
-    font-size: 40px;
+    font-size: 36px;
     letter-spacing: -4px;
     position: relative;
     cursor: pointer;
@@ -196,7 +196,40 @@
     left: 300px;
     z-index: 1000;
     }
+
+  .menu-items {
+    text-align: center;
+    color: white;
+    font-size: 2.4rem;
+    letter-spacing: -2px;
+    font-weight: 700;
+    display: block;
+  }
+
+
+}
+
+/* 150% */
+@media (min-width: 1242px) and (max-width: 1364px) {
+
+  .HeaderLogoText {
+    font-size: 36px;
+    letter-spacing: -4px;
+    position: relative;
+    cursor: pointer;
+    right: 300px;
+    font-weight: 800;
+  }
   
+  .menu-icon {
+    width: 34px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    left: 300px;
+    z-index: 1000;
+    }
+
   .menu-items {
     text-align: center;
     color: white;
@@ -205,10 +238,52 @@
     font-weight: 700;
     display: block;
   }
+
+  .menu-items > .menu-item {
+    margin: 10px;
+    margin-top: 70px;
+    transform: translateY(40%);
+    cursor: pointer;
+    letter-spacing: -1.5px;
+    position: relative;
+    width: 100%;
+  }
+
+}
+
+/* 175% */
+@media (min-width: 961px) and (max-width: 1242px) {
+  
+  .HeaderLogoText {
+    font-size: 32px;
+    letter-spacing: -3px;
+    position: relative;
+    cursor: pointer;
+    right: 250px;
+    font-weight: 800;
+  }
+  
+  .menu-icon {
+    width: 34px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    left: 250px;
+    z-index: 1000;
+    }
+  
+  .menu-items {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: -2px;
+    font-weight: 700;
+    display: block;
+  }
   
   .menu-items > .menu-item {
     margin: 10px;
-    margin-top: 80px;
+    margin-top: 70px;
     transform: translateY(40%);
     cursor: pointer;
     letter-spacing: -1.5px;
@@ -223,21 +298,21 @@
 @media (min-width: 769px) and (max-width: 960px) {
 
   .HeaderLogoText {
-    font-size: 38px;
-    letter-spacing: -4px;
+    font-size: 26px;
+    letter-spacing: -3px;
     position: relative;
     cursor: pointer;
-    right: 280px;
+    right: 200px;
     font-weight: 800;
   }
 
 
   .menu-icon {
-    width: 34px;
+    width: 30px;
     height: 20px;
     position: relative;
     cursor: pointer;
-    left: 280px;
+    left: 200px;
     z-index: 1000;
     }
 
@@ -264,21 +339,21 @@
 @media (min-width: 650px) and (max-width: 769px) {
 
   .HeaderLogoText {
-    font-size: 28px;
-    letter-spacing: -4px;
+    font-size: 20px;
+    letter-spacing: -2px;
     position: relative;
     cursor: pointer;
-    right: 200px;
+    right: 160px;
     font-weight: 800;
   }
 
 
   .menu-icon {
-    width: 30px;
+    width: 28px;
     height: 10px;
     position: relative;
     cursor: pointer;
-    left: 180px;
+    left: 160px;
     z-index: 1000;
     }
 
@@ -288,6 +363,18 @@
       font-size: 1rem;
       font-weight: 700;
       display: block;
+    }
+
+    .menu-icon span {
+      display: block;
+      position: absolute;
+      height: 4px;
+      background: #000;
+      border-radius: 2px;
+      opacity: 1;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+      z-index: 1000;
     }
 
     .menu-items > .menu-item {

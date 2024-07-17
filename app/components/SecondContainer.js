@@ -1,23 +1,46 @@
 'use client';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import "./SecondContainer.css";
-import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 
-function SecondContainer () {
-  const { scrollY } = useScroll();
+gsap.registerPlugin(ScrollTrigger);
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log("Page scroll: ", latest)
-  })
-  const opacity = useTransform(scrollY, [100,500], [0,1]);
-  const scale = useTransform(scrollY, [100, 500], [0.8, 1]);
+const SecondContainer = () => {
+  const sectionRef = useRef(null);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const text = textRef.current;
+
+    gsap.fromTo(text, 
+      { scale: 0.8, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: section,
+          start: "top 90%", // Adjust start position as needed
+          end: "top 20%", // Adjust end position as needed
+          scrub: true,
+          onUpdate: self => {
+            console.log("Scroll progress:", self.progress);
+          }
+        }
+      }
+    );
+  }, []);
 
   return (
-    <section id="blackcontainer">
-    <div className="second-container">
-        <motion.div style={{scale}} className="black-container-for-second">
-            <p className='second-paragraph'>I specialize in creating eye-catching and captivating designs. Pairing them with robust and comprehensive backends, making sure that my solutions are responsive, secure and meet the needs of my clients.</p>
-        </motion.div>
-    </div>
+    <section id="blackcontainer" ref={sectionRef}>
+      <div className="second-container">
+        <div ref={textRef} className="black-container-for-second">
+          <p className='second-paragraph'>
+            I specialize in creating eye-catching and captivating designs. Pairing them with robust and comprehensive backends, making sure that my solutions are responsive, secure and meet the needs of my clients.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }

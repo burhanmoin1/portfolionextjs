@@ -1,0 +1,21 @@
+/* ScrollActions.css */
+.scroll-section {
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    font-size: 3rem;
+  }
+  
+  .scroll-section {
+    position: relative;
+    padding: 100px 0;
+  }
+  
+  .scroll-element {
+    margin: 50px 0;
+    opacity: 0; /* initial opacity for animation */
+  }
+  

@@ -149,15 +149,15 @@
 @media (min-width: 961px) and (max-width: 1242px) {
 
     .PortfolioHeading{
-        font-size: 4rem;
-        letter-spacing: -2px;
+        font-size: 2.5rem;
+        letter-spacing: -1px;
         align-self: center;
         padding-left: 80px;
     }
     
     .projectimg {
         height: 40vh;
-        margin-bottom: 120px;
+        margin-bottom: 80px;
         width: 74vmin;
         border-radius: 12px;
         box-shadow: 0px 2px 8px rgba(0, 0, 0, .2);
@@ -197,7 +197,7 @@
 @media (min-width: 769px) and (max-width: 960px) {
 
     .PortfolioHeading{
-        font-size: 3rem;
+        font-size: 2rem;
         letter-spacing: -2px;
         align-self: center;
         padding-left: 80px;
@@ -221,6 +221,15 @@
         gap: 20px;
         padding-left: 200px;
     }
+
+    .projectimg {
+        height: 40vh;
+        margin-bottom: 50px;
+        width: 74vmin;
+        border-radius: 12px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, .2);
+    }
+
     
     .projecttext {
         margin-top: 10px;
@@ -235,7 +244,7 @@
     
     .projectdetails {
         width: 56vmin;
-        font-size: .8rem;
+        font-size: .76rem;
     }
 
 } 
@@ -243,10 +252,26 @@
 
 /* 250% */
 @media (min-width: 650px) and (max-width: 769px) {
+    
+    .Portfolio {
+        height: auto;
+        display: flex;
+        justify-content: center;    
+        flex-direction: column;
+        letter-spacing: 0px;
+    }
+
+    .projectimg {
+        height: 40vh;
+        margin-bottom: 50px;
+        width: 74vmin;
+        border-radius: 12px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, .2);
+    }
 
     .PortfolioHeading{
         font-size: 2rem;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         align-self: center;
         padding-left: 80px;
     }
@@ -264,12 +289,12 @@
 
     .projectdetails {
         width: 56vmin;
-        font-size: .7rem;
+        font-size: .54rem;
     }
 
     .techused {
         padding-top: 10px;
-        font-size: .5rem;
+        font-size: .54rem;
         color:darkblue;
         width: 50vmin;
     }

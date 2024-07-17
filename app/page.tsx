@@ -5,6 +5,7 @@ import ThirdContainer from './components/ThirdContainer';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Footer from './components/Footer';
+import Scene from './components/Scene';
 
 export default function Home() {
   return (

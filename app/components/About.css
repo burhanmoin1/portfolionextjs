@@ -80,6 +80,25 @@
 /* 175% */
 @media (min-width: 961px) and (max-width: 1242px) {
 
+    .About {
+        background-color: rgba(0,0,0,255);
+        height: auto;
+        margin-right: 20px;
+        margin-left: 300px;
+        border-radius: 14px;
+        color: #e7e7e9;
+        letter-spacing: -1px;
+        display: flex;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .storytext {
+        padding: 20px;
+        padding-left: 0px;
+    }
+
     .storyheading {
         text-align: start;
         font-size: 2rem;
@@ -90,7 +109,7 @@
     }
 
     .storydetails {
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-align: start;
         width: 100vmin;
     }
@@ -103,8 +122,8 @@
     .About {
         background-color: rgba(0,0,0,255);
         height: auto;
-        margin-right: 50px;
-        margin-left: 340px;
+        margin-right: 20px;
+        margin-left: 300px;
         border-radius: 14px;
         color: #e7e7e9;
         letter-spacing: -1px;
@@ -125,7 +144,7 @@
     
     .storyheading {
         text-align: start;
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .story .storytext:nth-of-type(2) .storydetails,.story .storytext:nth-of-type(2)  .storyheading {
@@ -135,13 +154,13 @@
     
     .storytext {
         padding: 20px;
-        padding-left: 60px;
+        padding-left: 0px;
     }
 
     .storydetails {
         font-size: 1rem;
         text-align: start;
-        width: 80vmin;
+        width: 100vmin;
     }
 
 }
@@ -152,9 +171,8 @@
     .About {
         background-color: rgba(0,0,0,255);
         height: auto;
-        margin-right: 40px;
-        margin-left: 340px;
-        width: 100vmin;
+        margin-right: 0px;
+        margin-left: 240px;
         border-radius: 14px;
         color: #e7e7e9;
         letter-spacing: -1px;
@@ -163,6 +181,7 @@
         flex-direction: column;
         align-items: center;
     }
+    
 
     .Aboutheading {
         font-size: 2rem;
@@ -170,13 +189,18 @@
     
     .storyheading {
         text-align: start;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+
+    .storytext {
+        padding: 20px;
+        padding-left: 20px;
     }
 
     .storydetails {
         font-size: .8rem;
         text-align: start;
-        width: 80vmin;
+        width: 100vmin;
     }
 
 }
